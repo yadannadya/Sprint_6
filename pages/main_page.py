@@ -21,7 +21,7 @@ class MainPageScooter(BasePage):
         self.click_on_element(question_locator)
 
    
-    @allure.step("Сравни текст ответа")
+    @allure.step("Сравнить текст ответа")
     def check_text(self, answer, text):
         answer_locator = MainLocators.answer(answer)
         actual_text = self.get_text_on_element(answer_locator)

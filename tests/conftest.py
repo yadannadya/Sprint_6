@@ -4,7 +4,6 @@ import pytest
 import curl
 
 
-@pytest.fixture(scope="function")
 def driver():
     options = Options() 
     options.add_argument('--headless')
