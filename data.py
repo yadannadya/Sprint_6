@@ -9,11 +9,11 @@ text_8 = "Да, обязательно. Всем самокатов! И Моск
 
 text = [[0, 0, text_1], [1, 1, text_2], [2, 2, text_3], [3, 3, text_4], [4, 4,  text_5], [5, 5, text_6], [6, 6, text_7], [7, 7, text_8]]
 
-person = { 
-        "name" : "Игорь",
-        "surname" : "Игорь",
-        "adress" : "Москва",
-        "metro" :"ЗИЛ",
-        "number" : "89008889999",
-        "date" : "21.11.2025" 
-        }
+class Person:
+        name = "Игорь"
+        surname = "Игорь"
+        adress = "Москва"
+        metro = "ЗИЛ"
+        number = "89008889999"
+        date = "21.11.2025" 
+        

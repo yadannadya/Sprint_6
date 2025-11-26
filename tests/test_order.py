@@ -1,6 +1,6 @@
 import allure
 import pytest
-import data
+from data import Person
 from pages.order_page import OrderPageScooter
 from locators.locators import MainLocators
 
@@ -13,8 +13,8 @@ class TestPageOrder:
                 
         order = OrderPageScooter(driver)
         order.click_button_order(locator)
-        order.set_info_people(data.person)
-        order.set_info_order(data.person)
+        order.set_info_people(Person)
+        order.set_info_order(Person)
         order.click_button_yes()
         assert order.check_window_order()
 
